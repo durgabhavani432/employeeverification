@@ -1,0 +1,119 @@
+body {
+      font-family: Arial, sans-serif;
+      background: url("https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1400&q=80") no-repeat center center fixed;
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      text-align: center;
+      color: #fff;
+    }
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+    section {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 20px;
+      margin: 40px auto;
+      max-width :500px;
+      border-radius: 12px;
+      box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    form .input-group {
+      display: flex;
+      align-items: center;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #fff;
+    }
+    form .input-group img {
+      width : 24px;
+      height : 24px;
+      margin: 0 10px;
+    }
+    form input {
+      flex: 1;
+      padding: 10px;
+      border: none;
+      outline: none;
+      font-size: 14px;
+    }
+    form button {
+      padding: 12px;
+      font-size: 15px;
+      border: none;
+      border-radius: 8px;
+      background-color: #333;
+      color: #fff;
+      cursor: pointer;
+    }
+    form button:hover { 
+      background-color: #555; 
+    }
+    table {
+      width : 100%;
+      border-collapse: collapse;
+      background: #fff;
+      margin-top : 40px;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+    }
+    th { 
+      background-color: #333;
+      color: #fff; 
+    }
+    td img.avatar {
+      width : 40px;
+      height : 40px;
+      border-radius: 50%;
+    }
+    .badge {
+      padding: 4px 8px;
+      border-radius: 6px;
+      font-weight: bold;
+      color: white;
+    }
+    .badge.Pending { 
+      background-color: orange; 
+    }
+    .badge.Verified { 
+      background-color: green; 
+    }
+    .badge.Failed { 
+      background-color: red; 
+    }
+    button.action {
+      padding: 6px 10px;
+      font-size: 13px;
+      margin: 2px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .verify { 
+      background: #28a745; 
+      color: #fff; 
+    }
+    .fail { 
+      background: #dc3545; 
+      color: #fff; 
+    }
+    .delete { 
+      background: #6c757d; 
+      color: #fff; 
+    }
+    #systemSection { 
+      display: none; 
+    }
