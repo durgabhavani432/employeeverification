@@ -1,12 +1,12 @@
-    // Users stored in localStorage
+  
     let users = JSON.parse(localStorage.getItem("users")) || [];
-    let currentUser = null; // no auto-login on refresh
+    let currentUser = null; 
 
     const registerSection = document.getElementById('registerSection');
     const loginSection = document.getElementById('loginSection');
     const systemSection = document.getElementById('systemSection');
 
-    // Show login/register toggles
+   
     function showLogin() {
       registerSection.style.display = "none";
       loginSection.style.display = "block";
@@ -23,7 +23,7 @@
       loginSection.style.display = "block";
     }
 
-    // Registration
+  
     document.getElementById('registerForm').addEventListener('submit', (e) => {
       e.preventDefault();
       const name = document.getElementById('regName').value;
@@ -41,7 +41,7 @@
       e.target.reset();
     });
 
-    // Login
+  
     document.getElementById('loginForm').addEventListener('submit', (e) => {
       e.preventDefault();
       const email = document.getElementById('loginEmail').value;
@@ -59,7 +59,7 @@
       }
     });
 
-    // Employee System
+
     document.addEventListener("DOMContentLoaded", () => {
       let employeeID = 1;
       const employees = [];
